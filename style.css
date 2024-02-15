@@ -1,0 +1,429 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("font/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("font/Roboto-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*font*/
+    --login-font: "Inter-Regular";
+    --primary-font: "Poppins-Regular";
+    --secondary_font: "Roboto-Regular";
+    /*font end*/
+    /*colors*/
+    --bg-black: #000000;
+    --bg-green: #20DC49;
+    --bg-white: #ffffff;
+    --bg-grey: #DEDEDE;
+    --bg-Gray85: #D9D9D9;
+    --bg-Gray79: #c9c9c9;
+    --bg-Very-light-gray: #ECECEC;
+    --bg-dark-red: #5A5A5A;
+    --bg-red: #D93F21;
+    --bg-Eerie-Black: #1A1A1A;
+    --bg-nero: #202020;
+    --bg-White-Smoke: #FFF2F2;
+    /*colors end*/
+}
+body{
+    background-color: #F0F2F5;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+/*პირველი ბოქსი*/
+.blok_1{
+    width: 53%;
+    height: 100%;
+    padding-top: 40px;
+}
+/*ნავიგაცია*/
+.navigation{
+    margin-left: 58px;
+    width: 651px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*ლოგოს სურათი და სახელი*/
+.logo_link{
+    width: 122.76px;
+    height: 100%;
+    color: var(--bg-black);
+    font-family: var(--login-font);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 11.97px;
+    text-decoration: none;
+}
+.image_logo{
+    width: 29.49px;
+    height: 29.49px;
+}
+/*ლოგოს სურათი და სახელი დასასრული*/
+/*ნავიგაციის ტექსტი*/
+nav p{
+    color: var(--bg-black);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+/*ნავიგაციის შესვლის ღილაკი*/
+.sign_up_link{
+    color: var(--bg-green);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+.burger_image{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+/*home (შესვლის ღილაკის სხვადასხვა ტეგები)*/
+.home_sign_up_details{
+    width: 400px;
+    height: 557px;
+    margin-top: 94px;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+}
+/*სათაური*/
+.h1_text{
+    color: var(--bg-black);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 600;
+}
+/*პარაგრაფის ტექსტი*/
+.paragraf_text{
+    color: var(--bg-black);
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+} 
+/*button შესვლის ღილაკები*/
+.button_box{
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/*Google*/
+.button_1{
+    width: 126px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-green);
+    background-color: var(--bg-white);
+    color: var(--bg-black);
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+/*button ის სურათები*/
+.soc_logo{
+    width: 22px;
+    height: 22px;
+}
+/*class=button_1*/
+/*Facebook*/
+#button_2{
+    border: 1px solid var(--bg-grey);
+}
+/*პარაგრაფის მეორე ტექსტური ნაწილი */
+.paragraf_text_2{
+    color: var(--bg-black);
+    font-family: var(--primary-font);
+    font-size: 13px;
+    font-weight: 400; 
+    margin-top: 34px;
+}
+/*input_email ველი */
+.input_email{
+    margin-top: 35px;
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-Gray85);
+    outline: none;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;  
+    color: var(--bg-dark-red);
+    padding-left: 20px;
+}
+/*class="input_email"*/
+/*input_password ველი*/
+#input_password{
+    background-image: url(image/blind\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 360px 50%; 
+}
+/*input-ის დამატებითი ტექსტური ნაწილი */
+.input_text_box{
+    margin-top: 21px;
+    width: 400px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input_text_1{
+    width: 142px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.input2{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: var(--bg-Very-light-gray);
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 20px;
+    transform: 5s;
+}
+.input2:checked{
+    background: var(--bg-green);
+}
+.input2::before{
+    background-color: var(--bg-white);
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+.input2:checked::before{
+    left: 24px;
+}
+
+.text_remember_me{
+    color: var(--bg-Eerie-Black);
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+.text_recover_password{
+    color: var(--bg-red);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 300;
+}
+/*input-ის დამატებითი ტექსტური ნაწილის დასასრული */
+/*button-ის შესვლის ღილაკი log_in*/
+.button_log_in{
+    margin-top: 27px;
+    color: var(--bg-dark-red);
+    width: 400px;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-dark-red);
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400; 
+    cursor: pointer;
+}
+/*მეორე ბლოკი*/
+.blok_2{
+    width: 47%;
+    height: 900px;
+    background-image: url(image/home.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+/*ბარათის ბოქსი*/
+.card_box{
+    width: 547px;
+    height: 270px;
+    border-radius: 10px;
+    background-color: var(--bg-White-Smoke);
+    position: absolute;
+    top: 581px;
+    left: 37px;
+    z-index: 2;
+}
+/*პირველი ფერადი ზოლი*/
+.card_section_1{
+    margin-top: 42px;
+    margin-left: 37px;
+    width: 238px;
+    height: 45px;
+    background-color: var(--bg-green); 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.image_thumbs{
+    width: 22.05px;
+    height: 22.05px;
+}
+.card_section_1_text{
+    color: var(--bg-black);
+    font-family: var(--secondary_font);
+    font-size: 14px;
+    font-weight: 400;  
+}
+/*მეორე ტექსტული ნაწილი*/
+.card_section_2{
+    margin-top: 15px;
+    margin-left: 37px;
+    width: 453px;
+    height: 99px;
+}
+.card_section_2 p{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 400; 
+    color: var(--bg-nero) 
+}
+/*ფერადი სურათი  position: absolute;*/
+.image_ellipse{
+    width: 353px;
+    height: 353px;
+    background-color:rgba(32, 220, 73, 0.06);
+    position: absolute;
+    top: 501px;
+    left: 767px;
+    z-index: 1;
+}
+@media screen and (max-width: 768px) {
+    header{
+        background-image: url(image/home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 768px !important;
+        height: 900px !important;
+        display: block !important;
+    }
+    .blok_1{
+        width: 100% !important;
+        height: 100%;
+        padding-top: 0 !important;
+    }
+    .navigation{
+        background-color:var(--bg-Gray85);
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 0 15px;
+    }
+    nav p{
+       display: none;
+    }
+    .burger_image{
+        display: block;
+        background-color: var(--bg-dark-red);
+        border-radius: 3px;
+    }
+    .home_sign_up_details{
+        background-color: rgba(240, 242, 245, 0.6);
+        width: 375px !important;
+        height: 390px !important;
+        margin-top: 90px !important;
+        border-radius: 5px;
+    }
+    .h1_text{
+        font-size: 28px !important;
+    }
+    .paragraf_text{
+        font-size: 12px !important;
+    } 
+    .button_box{
+        margin-top: 20px !important;
+        gap: 8px !important;
+    }
+    .button_1{
+        border: 1px solid var(--bg-grey) !important;
+    }
+    .paragraf_text_2{
+        font-size: 10px !important;
+        margin-top: 15px !important;
+    }
+    .input_email{
+        margin-top: 20px !important;
+        width: 350px !important;
+        height: 44px !important;
+        font-size: 12px !important;
+    }
+    #input_password{
+        background-size: 15px 15px !important;
+        background-position: 320px 50% !important; 
+    }
+    .input_text_box{
+        margin: auto;
+        margin-top: 15px;
+        width: 340px !important;
+    }
+    .input_text_1{
+        width: 130px !important;
+
+    }
+    .input2{
+        width: 15px !important;
+        -webkit-appearance: checkbox !important;
+    }
+    .input2::before{
+        display: none;
+    }
+    .input2:checked::before{
+        left: 24px;
+    }
+    .text_remember_me{
+        font-size: 10px !important;
+    }
+    .text_recover_password{
+        font-size: 12px !important;
+    }
+    .button_log_in{
+        margin-top: 20px !important;
+        width: 350px !important;
+        height: 42px !important;
+        font-size: 14px !important;
+    }
+    .blok_2{
+        display: none;
+    }
+    .card_box{
+        display: none;
+    }
+    .image_ellipse{
+        display: none;
+    }
+}
